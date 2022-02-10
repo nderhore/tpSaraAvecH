@@ -1,7 +1,14 @@
-package com.coffee.jee.model;
+package com.coffee.jee.entity;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 public class Coffee {
+
+    @Id
     private String name;
+
     private Integer price;
 
     public Coffee() {

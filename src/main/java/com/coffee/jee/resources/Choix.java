@@ -13,7 +13,7 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
 import com.coffee.jee.ejb.ChoixBean;
-import com.coffee.jee.model.Coffee;
+import com.coffee.jee.entity.Coffee;
 
 @Path("choix")
 public class Choix {

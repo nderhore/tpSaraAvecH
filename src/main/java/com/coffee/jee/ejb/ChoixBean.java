@@ -23,6 +23,10 @@ public class ChoixBean {
         coffeeRepository.save(c);
     }
 
+    public Coffee getCoffeeById(String name){
+        return coffeeRepository.getCoffeeById(name);
+    }
+
     public void deleteCoffeeByName(String name) {
         coffeeRepository.deleteById(name);
     }

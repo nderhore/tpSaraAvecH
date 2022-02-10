@@ -1,16 +1,16 @@
-http://localhost:8070/coffee/resources/choix/
+http://localhost:8080/coffee/resources/choix/
 
 ###
-POST http://localhost:8070/coffee/resources/choix/
+POST http://localhost:8080/coffee/resources/choix/
 Content-Type: application/json
 
 {
     "name": "Espresso",
-    "price": 2
+    "price": 2.0
 }
 
 ###
-POST http://localhost:8070/coffee/resources/choix/
+POST http://localhost:8080/coffee/resources/choix/
 Content-Type: application/json
 
 {
@@ -24,11 +24,20 @@ Content-Type: application/json
 
 {
     "name": "Lungo",
-    "price": 3
+    "price": 3.0
 }
 
 ###
-DELETE http://localhost:8070/coffee/resources/choix/Espresso
+DELETE http://localhost:8080/coffee/resources/choix/Espresso
 
 ###
-PUT http://localhost:8070/coffee/resources/choix/
+GET http://localhost:8080/coffee/resources/choix/Ristretto
+
+###
+PUT http://localhost:8080/coffee/resources/choix/
+Content-Type: application/json
+
+{
+  "name": "Ristretto",
+  "price": 3.0
+}

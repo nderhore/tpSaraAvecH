@@ -31,6 +31,13 @@ public class Choix {
         return Response.ok(choixBean.getCoffees()).build();
     }
 
+    @GET
+    @Path(("{name}"))
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response getCoffeeById(@PathParam(("name")) String name) {
+        return Response.ok(choixBean.getCoffeeById(name)).build();
+    }
+
     @POST
     @Consumes(MediaType.APPLICATION_JSON)
     public Response post(Coffee c) {

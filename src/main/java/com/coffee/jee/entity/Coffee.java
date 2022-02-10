@@ -9,14 +9,14 @@ public class Coffee {
     @Id
     private String name;
 
-    private Integer price;
+    private Double price;
 
     public Coffee() {
     }
 
-    public Coffee(String name, Integer price) {
+    public Coffee(String name, Double price) {
         this.name = name;
-        this.price = 0;
+        this.price = price;
     }
 
     public String getName() {
@@ -27,11 +27,11 @@ public class Coffee {
         this.name = name;
     }
 
-    public Integer getPrice() {
+    public Double getPrice() {
         return price;
     }
 
-    public void setPrice(Integer price) {
+    public void setPrice(Double price) {
         this.price = price;
     }
 
